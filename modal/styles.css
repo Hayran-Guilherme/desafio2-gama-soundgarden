@@ -5,14 +5,10 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 1rem;
-}
-
 button {
     padding: .6rem 1.2rem;
-    background-color:  #F8BBD0;
-    color: #5c5c5cbd;
+    background-color:  #c4285f;
+    color: #fff;
     border: none;
     border-radius: .25rem;
     cursor: pointer;
@@ -63,8 +59,19 @@ button:hover{
         padding-bottom: 1rem;
 }
 
-.modal-body p{
+.modal-body input{
     margin-bottom: 1rem;
+}
+
+.form-group{
+    padding: 1rem;
+}
+
+.input{
+    width: 100%;
+    border: .5px solid;
+    border-radius: 5px;
+    padding: .2rem;
 }
 
 #modal.hide, 
@@ -75,4 +82,10 @@ button:hover{
 
 #modal.hide{
     top: 0;
+}
+
+.modal-footer button{
+    background-color: #eb0354;
+    color: #fff;
+    opacity: 1;
 }
