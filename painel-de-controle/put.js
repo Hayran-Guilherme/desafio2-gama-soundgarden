@@ -1,3 +1,21 @@
+fetch('https://soundgarden-api.vercel.app/events')
+.then(response => response.json())
+.then( data => {
+    console.log(data)
+})
+.catch(error => {
+    console.dir(error)
+})
+
+fetch('https://soundgarden-api.vercel.app/events/63f414dba63acad41dd27c45')
+.then(response => response.json())
+.then( data => {
+    console.log(data)
+})
+.catch(error => {
+    console.dir(error)
+})
+
 const Enviar = document.getElementById('enviar')
 Enviar.addEventListener("click", function(event){
 

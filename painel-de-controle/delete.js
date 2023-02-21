@@ -1,10 +1,24 @@
-const Excluir = document.getElementById('excluir')
-Excluir.addEventListener("click", function(event){
+fetch('https://soundgarden-api.vercel.app/events')
+.then(response => response.json())
+.then( data => {
+    console.log(data)
+})
+.catch(error => {
+    console.dir(error)
+})
 
-event.preventDefault()    
+fetch('https://soundgarden-api.vercel.app/events/63f414dba63acad41dd27c45')
+.then(response => response.json())
+.then( data => {
+    console.log(data)
+})
+.catch(error => {
+    console.dir(error)
+})
 
 // objeto com as informações do evento
 const evento = {
+    id: '63f4091ba63acad41dd27baf',
     name: nome,
     attractions: [atracoes],
     description: descricao,
@@ -14,7 +28,7 @@ const evento = {
 }
 
 // fazer requisição http utilizando fetch
-fetch('https://soundgarden-api.vercel.app/events/:id', {
+fetch('https://soundgarden-api.vercel.app/events/63f414dba63acad41dd27c45', {
     method: 'DELETE',
     body: JSON.stringify(evento),
     headers: {
@@ -33,7 +47,5 @@ fetch('https://soundgarden-api.vercel.app/events/:id', {
 .catch(error => {
     // erro na requisição
     console.dir(error)
-})
-
 })
    
