@@ -5,7 +5,7 @@ Descrição:
 Projeto feito no Desafio 1 do Gama Experience #48, onde recebemos um projeto no Figma referente à uma empresa fictícia para elaborarmos todo o HTML e CSS incluindo responsividade para smartphones, tablets e desktop.
 
 Objetivo:
-Integrar front-end com back-end através da API
+Integrar front-end com back-end através da API;
 Criar eventos;
 Editar eventos;
 Excluir eventos;
